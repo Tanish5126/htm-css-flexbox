@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background-color: #1e293b;
+    color: white;
+    position: sticky;
+    top: 0;
+}
+
+.logo {
+    color: bisque;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.nav {
+    display: flex;
+    gap: 25px;
+    margin-left: auto;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.nav a:hover {
+    color: #38bdf8;
+}
+
+.cta {
+    margin-left: 20px;
+}
+
+.cta button {
+    padding: 8px 18px;
+    border: none;
+    background-color: #3b82f6;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.cta button:hover {
+    background-color: #2563eb;
+}
+
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    background-color: #f1f5f9;
+}
+
+.topbar input {
+    width: 60%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.admin {
+    font-weight: bold;
+}
+
+.container {
+    display: flex;
+}
+
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    width: 220px;
+    background-color: #0f172a;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+.sidebar a {
+    color: white;
+    text-decoration: none;
+    margin-bottom: 20px;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    color: #38bdf8;
+}
+
+
+.content {
+    flex: 1;
+    padding: 30px;
+    background-color: #e5e7eb;
+}
+
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.box {
+    flex: 1;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+
+.info {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.info-box {
+    flex: 1;
+    background-color: #2563eb;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+
+
+@media (max-width: 768px) {
+
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .nav {
+        flex-direction: column;
+        margin-left: 0;
+    }
+
+    .cta {
+        width: 100%;
+    }
+
+    .cta button {
+        width: 100%;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+        min-height: auto;
+    }
+
+    .stats,
+    .info {
+        flex-direction: column;
+    }
+
+    .topbar {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .topbar input {
+        width: 100%;
+    }
+}
